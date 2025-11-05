@@ -1,0 +1,508 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.logo {
+  cursor: pointer;
+}
+nav {
+  width: 100%;
+  padding: 1rem 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  position: relative;
+  z-index: 1000;
+}
+
+.logo {
+  width: 120px;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav-links li a {
+  font-size: 17px;
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.btn {
+  border-radius: 0;
+}
+.anchor {
+  text-decoration: none;
+}
+.carousel-item:nth-child(1),
+.carousel-item:nth-child(2) {
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+.carousel-item:nth-child(1) {
+  background-image: url("https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Hero-Desktop-M365-Premium-Glass-Icon-Bounce-Homepage:VP5-1920x600");
+
+}
+
+.carousel-item:nth-child(2) {
+  background-image: url("https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Laptop-AI-7Ed-Sapphire-MC001-3000x1682:VP5-1920x600");
+}
+.details1{
+    padding-top: 12%;
+    padding-left: 55%;
+}
+.details2{
+  padding-top: 15%;
+  padding-left: 8%;
+}
+.carousel-item {
+  height: 100vh; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.accounts-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding-top: 15px;
+}
+
+.accounts-section svg {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+  transition: transform 0.3s ease;
+}
+
+.item {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card-container {
+  width: 24%;
+  min-width: 260px;
+  padding: 20px;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.Xbox-section {
+  background-image: url("https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-XSS-Hero-Xbox-Series-S:VP5-1596x600");
+  height: 70vh;
+  margin: 45px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 18%;
+}
+
+.Shop-button {
+  width: 17%;
+}
+
+.business-container {
+  margin-left: 3.2%;
+}
+
+.war-button {
+  width: 19%;
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+.Follow-container {
+  display: flex;
+  margin: 5%;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.Follow-container svg {
+  width: 30px;
+  height: 30px;
+}
+.footer-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 3%;
+  padding: 20px;
+  background-color: rgba(243, 242, 242, 0.808);
+  gap: 25px;
+}
+
+.footer-sections li {
+  list-style: none;
+}
+
+.footer-sections li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.foot {
+  background-color: rgba(243, 242, 242, 0.808);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 5%;
+}
+
+.foot svg {
+  height: 25px;
+  width: 25px;
+}
+
+.foot1 {
+  display: flex;
+  gap: 12px;
+  margin-left: 3%;
+}
+
+.foot2 {
+  display: flex;
+  gap: 20px;
+}
+.sea{
+  display: none;
+}
+/* TABLET VIEW */
+@media (max-width: 992px) {
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .Xbox-section {
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+.sea{
+  display: inline;
+  color: #000;
+  width: 30%;
+}
+  .Shop-button {
+    width: 40%;
+  }
+
+  .war-button {
+    width: 40%;
+    margin-left: 0;
+  }
+  .foot{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .cards-container{
+    margin-left: auto;
+    flex-wrap: wrap;
+  }
+  .accounts-section{
+    padding-top: 15px;
+    flex-wrap: wrap;
+  }
+  nav svg{
+    display: none;
+  }
+  .carousel-item:nth-child(1),
+  .carousel-item:nth-child(2) {
+    height: 70vh;
+    width: 100%;
+  }
+  .details1{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    text-align: center;
+  }
+  .details2{
+    position: absolute;
+    text-align: center;
+  }
+}
+
+/* MOBILE VIEW */
+@media (max-width: 600px) {
+  nav {
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  .sea{
+    margin-top: 12px;
+    width: 35%;
+  }
+  .logo{
+    margin-top: 10px;
+  }
+  nav svg{
+    display: none;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cards-container {
+    align-items: center;
+  }
+  .card-container {
+    width: 90%;
+  }
+  .Xbox-section {
+    height: 40vh; 
+    width: 80%;
+    background-size: cover;
+    background-position: center;
+    font-size: 13px;
+  }
+
+  .Shop-button,
+  .war-button {
+    width: 70%;
+  }
+
+  .Follow-container {
+    justify-content: center;
+  }
+
+  .footer-sections {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .foot {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+  }
+.accounts-section{
+    padding-top: 15px;
+  }
+  .carousel-item:nth-child(1),
+  .carousel-item:nth-child(2) {
+    height: 40vh; 
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+   .heading{
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .para{
+    font-size: 12px;
+  }
+  .mic-btn1{
+    width: auto;
+    font-size: 12px;
+  }
+  .mic-btn2{
+    width: auto;
+    font-size: 12px;
+  }
+  .details1{
+    padding-left: 12%;
+    padding-top: 3%;
+    text-align: center;
+  }
+  .details2{
+    padding-top: 5%;
+    text-align: center;
+  }
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background: white;
+    border-top: 1px solid #ccc;
+    padding: 1rem 0;
+  }
+
+  #menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links li a {
+    width: 100%;
+    display: block;
+  }
+  nav svg{
+    display: block;
+  }
+  nav{
+    font-size: 12px;
+  }
+}
+@media (max-width: 994px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background: white;
+    border-top: 1px solid #ccc;
+    padding: 1rem 0;
+  }
+
+  #menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links li a {
+    width: 100%;
+    display: block;
+  }
+  .search{
+    display: none;
+  }
+  nav svg{
+    display: block;
+  }
+  .bi-search{
+    display: none;
+  }
+  .bi-chevron-compact-down{
+    display: none;
+  }
+  .bi-cart3{
+     display: none;
+  }
+  .bi-person-circle{
+    display: none;
+  }
+
+}
+@media (min-width: 995px) {
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .Xbox-section {
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .Shop-button {
+    width: 40%;
+  }
+
+  .war-button {
+    width: 40%;
+    margin-left: 0;
+  }
+  .foot{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .accounts-section{
+    padding-top: 15px;
+    flex-wrap: wrap;
+  }
+  .carousel-item:nth-child(1),
+  .carousel-item:nth-child(2) {
+    height: 70vh;
+    width: 100%;
+  }
+  .xbox-section {
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    background-position: center;
+
+  }
+
+  .cards-container {
+  
+  }
+
+  nav svg {
+    width: 20px;
+    height: 17px;
+  }
+}
+
+
